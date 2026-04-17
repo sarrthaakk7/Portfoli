@@ -1,92 +1,45 @@
-/* ===== SKILLS PAGE - skills.css ===== */
-
-.skill-category {
-  margin-bottom: 2.5rem;
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #111827;
+    color: white;
 }
 
-.skill-category h3 {
-  font-size: 0.75rem;
-  font-family: var(--font-mono);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: var(--accent2);
-  margin-bottom: 1rem;
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    background: #0b1220;
 }
 
-.skill-item {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.2rem 1.5rem;
-  margin-bottom: 0.8rem;
-  transition: border-color 0.3s, transform 0.3s;
+nav a {
+    color: white;
+    text-decoration: none;
 }
 
-.skill-item:hover {
-  border-color: var(--accent);
-  transform: translateX(6px);
+nav a:hover {
+    color: #22c55e;
 }
 
-.skill-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.6rem;
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
 }
 
-.skill-name {
-  font-weight: 700;
-  font-size: 1rem;
+.card {
+    background: #1f2937;
+    padding: 35px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
-.skill-level {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  padding: 0.25rem 0.7rem;
-  border-radius: 100px;
-  letter-spacing: 0.5px;
-}
-
-.level-beginner {
-  background: rgba(240, 192, 64, 0.15);
-  color: var(--accent);
-  border: 1px solid rgba(240, 192, 64, 0.3);
-}
-
-.level-intermediate {
-  background: rgba(224, 92, 58, 0.15);
-  color: var(--accent2);
-  border: 1px solid rgba(224, 92, 58, 0.3);
-}
-
-.level-advanced {
-  background: rgba(80, 200, 120, 0.15);
-  color: #50c878;
-  border: 1px solid rgba(80, 200, 120, 0.3);
-}
-
-/* Progress bar */
-.skill-bar {
-  height: 4px;
-  background: var(--border);
-  border-radius: 100px;
-  overflow: hidden;
-}
-
-.skill-bar-fill {
-  height: 100%;
-  border-radius: 100px;
-  background: linear-gradient(90deg, var(--accent), var(--accent2));
-  animation: fillBar 1s ease forwards;
-  transform-origin: left;
-}
-
-@keyframes fillBar {
-  from { width: 0%; }
-}
-
-.skill-desc {
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin-top: 0.5rem;
+.card p {
+    padding: 8px;
+    margin: 8px 0;
+    background: #111827;
+    border-radius: 6px;
 }
