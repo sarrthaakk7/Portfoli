@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarthak Dahal – Contact</title>
+
+  <!-- EXTERNAL CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="contact.css" />
+
+  <!-- INTERNAL CSS -->
+  <style>
+    .contact-note {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--muted);
+      background: rgba(240, 192, 64, 0.05);
+      border: 1px solid rgba(240, 192, 64, 0.15);
+      border-radius: var(--radius);
+      padding: 0.8rem 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-note span {
+      color: var(--accent);
+    }
+
+    .submit-row {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <span class="nav-logo">S<span>.</span>Dahal</span>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <!-- INLINE CSS -->
+    <a href="mailto:sarthak.dahal@gmail.com" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); border: 1px solid var(--accent); padding: 0.4rem 1rem; border-radius: 6px;">✉ Email Me</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="page-hero fade-up">
+    <div class="page-tag">// contact.html</div>
+    <h1 class="page-title">Get In <span class="highlight">Touch</span></h1>
+    <p class="page-subtitle">// Have something to say? I'd love to hear from you.</p>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section>
+
+    <p class="contact-note">
+      <span>ℹ Note:</span> This form is a demonstration as part of my Grade 11 CS Portfolio project.
+      For actual queries, feel free to reach me directly via email.
+    </p>
+
+    <div class="contact-layout">
+
+      <!-- Contact Info -->
+      <div class="contact-info fade-up fade-up-d1">
+        <h3>Contact Info</h3>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">✉</div>
+          <span class="contact-detail-text">sarthak.dahal@gmail.com</span>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">🏫</div>
+          <span class="contact-detail-text">Kavya School, Kathmandu</span>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📚</div>
+          <span class="contact-detail-text">Grade 11 · Computer Science</span>
+        </div>
+
+        <hr class="divider" style="margin: 1.5rem 0;" />
+
+        <h3 style="font-size: 0.9rem; margin-bottom: 0.8rem;">Quick Links</h3>
+        <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+          <a href="about.html" style="font-size: 0.85rem; color: var(--muted);">→ About Me</a>
+          <a href="skills.html" style="font-size: 0.85rem; color: var(--muted);">→ My Skills</a>
+          <a href="hobbies.html" style="font-size: 0.85rem; color: var(--muted);">→ My Hobbies</a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrap fade-up fade-up-d2">
+        <h3>Send a Message</h3>
+
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Aarav Sharma" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="yourname@email.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <div class="submit-row">
+            <button type="submit" class="btn">Send Message →</button>
+          </div>
+        </form>
+
+        <div class="form-success" id="successMsg">
+          ✓ Message received! Thanks for reaching out.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Sarthak Dahal · Built with HTML &amp; CSS · Grade 11 Final Project · Kavya School</p>
+    <p style="margin-top: 0.4rem;">
+      <a href="about.html">About</a> ·
+      <a href="skills.html">Skills</a> ·
+      <a href="hobbies.html">Hobbies</a> ·
+      <a href="contact.html">Contact</a>
+    </p>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>

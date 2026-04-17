@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarthak Dahal – About</title>
+
+  <!-- EXTERNAL CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="about.css" />
+
+  <!-- INTERNAL CSS -->
+  <style>
+    /* Decorative background grid */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-image:
+        linear-gradient(rgba(240,192,64,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(240,192,64,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .page-hero, section, nav, footer {
+      position: relative;
+      z-index: 1;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: #50c878;
+      background: rgba(80, 200, 120, 0.1);
+      border: 1px solid rgba(80, 200, 120, 0.25);
+      padding: 0.3rem 0.8rem;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+    }
+
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      background: #50c878;
+      border-radius: 50%;
+      animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .nav-cta {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 0.4rem 1rem;
+      border-radius: 6px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .nav-cta:hover {
+      background: var(--accent);
+      color: var(--bg);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <span class="nav-logo">S<span>.</span>Dahal</span>
+    <ul class="nav-links">
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Say Hi →</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="page-hero fade-up">
+    <div class="status-badge">
+      <span class="status-dot"></span>
+      Grade 11 · Kavya School
+    </div>
+    <h1 class="page-title">
+      Hi, I'm <span class="highlight">Sarthak</span><br />Dahal.
+    </h1>
+    <p class="page-subtitle">// Student · Coder · Basketball player · Music lover</p>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section>
+    <div class="about-hero fade-up fade-up-d1">
+      <!-- INLINE CSS on avatar -->
+      <div class="avatar" style="box-shadow: 0 0 40px rgba(240,192,64,0.2);">SD</div>
+      <div class="about-intro">
+        <h1>Sarthak Dahal</h1>
+        <p class="role">// Grade 11 Student at Kavya School</p>
+      </div>
+    </div>
+
+    <div class="quote-block fade-up fade-up-d2">
+      "The secret of getting ahead is getting started."
+      <cite>— Mark Twain</cite>
+    </div>
+
+    <h2><span class="dot">→</span> About Me</h2>
+    <p style="color: var(--muted); margin-bottom: 1.5rem; line-height: 1.8; font-size: 0.95rem;">
+      I'm Sarthak Dahal, a 16-year-old student currently studying in Grade 11 at Kavya School.
+      I'm really passionate about technology and learning how things work, especially in the world
+      of computers and coding. I enjoy exploring new ideas, whether it's through writing code,
+      playing sports, or picking up my guitar. I believe learning never really stops — there's
+      always something new to discover, and I try to bring that mindset into everything I do.
+    </p>
+
+    <h2><span class="dot">→</span> Quick Info</h2>
+    <div class="card fade-up fade-up-d3">
+      <table class="info-table">
+        <tr>
+          <td>Name</td>
+          <td>Sarthak Dahal</td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td>16 years old</td>
+        </tr>
+        <tr>
+          <td>School</td>
+          <td>Kavya School</td>
+        </tr>
+        <tr>
+          <td>Grade</td>
+          <td>Grade 11</td>
+        </tr>
+        <tr>
+          <td>Subject</td>
+          <td>Computer Science</td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><a href="mailto:sarthak.dahal@gmail.com">sarthak.dahal@gmail.com</a></td>
+        </tr>
+        <tr>
+          <td>Based in</td>
+          <td>Kathmandu, Nepal</td>
+        </tr>
+      </table>
+    </div>
+
+    <h2 style="margin-top: 2rem;"><span class="dot">→</span> Connect With Me</h2>
+    <div class="social-links fade-up fade-up-d4">
+      <a href="mailto:sarthak.dahal@gmail.com" class="social-chip">
+        ✉ sarthak.dahal@gmail.com
+      </a>
+      <a href="skills.html" class="social-chip">
+        ⚡ My Skills
+      </a>
+      <a href="hobbies.html" class="social-chip">
+        🎸 My Hobbies
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Sarthak Dahal · Built with HTML &amp; CSS · Grade 11 Final Project · Kavya School</p>
+    <p style="margin-top: 0.4rem;">
+      <a href="about.html">About</a> ·
+      <a href="skills.html">Skills</a> ·
+      <a href="hobbies.html">Hobbies</a> ·
+      <a href="contact.html">Contact</a>
+    </p>
+  </footer>
+
+</body>
+</html>

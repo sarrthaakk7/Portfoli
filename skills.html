@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarthak Dahal – Skills</title>
+
+  <!-- EXTERNAL CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="skills.css" />
+
+  <!-- INTERNAL CSS -->
+  <style>
+    /* Subtle dot pattern background */
+    body {
+      background-image: radial-gradient(rgba(240,192,64,0.05) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    .skills-intro {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+      font-family: var(--font-mono);
+      background: var(--card);
+      border-left: 3px solid var(--accent);
+      padding: 1rem 1.5rem;
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+
+    .legend {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <span class="nav-logo">S<span>.</span>Dahal</span>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html" class="active">Skills</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <!-- INLINE CSS example -->
+    <a href="contact.html" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); border: 1px solid var(--accent); padding: 0.4rem 1rem; border-radius: 6px;">Say Hi →</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="page-hero fade-up">
+    <div class="page-tag">// skills.html</div>
+    <h1 class="page-title">What I <span class="highlight">Can Do</span></h1>
+    <p class="page-subtitle">A breakdown of my current skill set and how I'd rate myself.</p>
+  </div>
+
+  <!-- SKILLS SECTION -->
+  <section>
+
+    <p class="skills-intro">
+      I'm still learning and growing every day. These are the skills I've built up
+      so far — some through school, some through just messing around and figuring things out.
+    </p>
+
+    <!-- Legend -->
+    <div class="legend">
+      <span class="legend-item">
+        <span class="legend-dot" style="background: var(--accent);"></span>
+        Beginner
+      </span>
+      <span class="legend-item">
+        <span class="legend-dot" style="background: var(--accent2);"></span>
+        Intermediate
+      </span>
+      <span class="legend-item">
+        <span class="legend-dot" style="background: #50c878;"></span>
+        Advanced
+      </span>
+    </div>
+
+    <!-- Communication Skills -->
+    <div class="skill-category fade-up fade-up-d1">
+      <h3>💬 Communication & Soft Skills</h3>
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <span class="skill-name">Communication Skills</span>
+          <span class="skill-level level-intermediate">Intermediate</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 65%;"></div>
+        </div>
+        <p class="skill-desc">I'm good at expressing ideas clearly, whether it's in written form or when speaking in front of others. Working on group projects has really helped me improve this.</p>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <span class="skill-name">Teamwork & Collaboration</span>
+          <span class="skill-level level-intermediate">Intermediate</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 60%;"></div>
+        </div>
+        <p class="skill-desc">Playing team sports like basketball has taught me how to work with others and support my teammates — both on and off the court.</p>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <span class="skill-name">Problem Solving</span>
+          <span class="skill-level level-intermediate">Intermediate</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 70%;"></div>
+        </div>
+        <p class="skill-desc">I genuinely enjoy puzzles and logic challenges. It's helped me think more systematically when I run into problems in coding and everyday life.</p>
+      </div>
+    </div>
+
+    <!-- Coding Skills -->
+    <div class="skill-category fade-up fade-up-d2">
+      <h3>💻 Technical / Coding Skills</h3>
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <span class="skill-name">HTML</span>
+          <span class="skill-level level-beginner">Beginner</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 45%;"></div>
+        </div>
+        <p class="skill-desc">Currently learning HTML as part of my Grade 11 Computer Science coursework. I've built this portfolio using what I've learned so far.</p>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <span class="skill-name">CSS</span>
+          <span class="skill-level level-beginner">Beginner</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 40%;"></div>
+        </div>
+        <p class="skill-desc">Learning how to style and layout web pages. I enjoy the creative side of CSS — making things look good is really satisfying.</p>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <span class="skill-name">Basic Coding Logic</span>
+          <span class="skill-level level-beginner">Beginner</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 35%;"></div>
+        </div>
+        <p class="skill-desc">Understanding of variables, conditions, and loops from my computer science classes. It's a foundation I'm planning to build on.</p>
+      </div>
+    </div>
+
+    <!-- Sports Skills -->
+    <div class="skill-category fade-up fade-up-d3">
+      <h3>🏀 Sports</h3>
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <span class="skill-name">Basketball</span>
+          <span class="skill-level level-advanced">Advanced</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 80%;"></div>
+        </div>
+        <p class="skill-desc">Basketball is my main sport. I've been playing for several years and it's honestly one of the things I'm most confident in. I enjoy both the physical challenge and the strategy involved.</p>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <span class="skill-name">Physical Fitness</span>
+          <span class="skill-level level-intermediate">Intermediate</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 65%;"></div>
+        </div>
+        <p class="skill-desc">Staying active is important to me. Regular sports and exercise keep me energised and focused throughout the day.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Sarthak Dahal · Built with HTML &amp; CSS · Grade 11 Final Project · Kavya School</p>
+    <p style="margin-top: 0.4rem;">
+      <a href="about.html">About</a> ·
+      <a href="skills.html">Skills</a> ·
+      <a href="hobbies.html">Hobbies</a> ·
+      <a href="contact.html">Contact</a>
+    </p>
+  </footer>
+
+</body>
+</html>
