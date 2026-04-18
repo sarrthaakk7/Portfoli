@@ -43,7 +43,6 @@ font-size:14px;
 nav a:hover{
 color:var(--accent);
 }
-
 .container{
 flex:1;
 display:flex;
@@ -72,7 +71,6 @@ h1{
 margin:10px 0 20px;
 font-size:42px;
 }
-
 p{
 color:var(--muted);
 line-height:1.8;
